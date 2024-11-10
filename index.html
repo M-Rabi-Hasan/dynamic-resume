@@ -4,124 +4,198 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rabi Hassan - Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dynamic Resume Builder</title>
+  <style>
+    /* Basic styling for the form */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-section {
+      margin-bottom: 20px;
+    }
+    .form-section h2 {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Styling for the generated resume */
+    .resume-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    .left-section {
+      background-color: #2a3d66;
+      color: #fff;
+      width: 30%;
+      padding: 20px;
+    }
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .right-section {
+      width: 70%;
+      padding: 20px;
+    }
+    h2, h3, h4 {
+      margin-top: 0;
+    }
+    .right-section h4 {
+      margin-top: 20px;
+      color: #2a3d66;
+    }
+    .left-section h2, .left-section h3 {
+      margin-bottom: 10px;
+    }
+    .left-section h4 {
+      margin-top: 20px;
+      font-size: 16px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+    }
+    p, ul {
+      margin: 5px 0;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- Main Container -->
-  <div class="resume-container">
-    <div class="left-sidebar">
-        <!-- Profile Image -->
-        <div class="profile-image">
-          <img src="assets/rabi-hassan.png" alt="Rabi Hassan">
-        </div>
-      
-        <!-- Contact Information -->
-        <div class="contact-info">
-          <h3>Contact</h3>
-          <p>📞 +123-456-7890</p>
-          <p>📧 rabi.hassan@fullstack.com</p>
-          <p>📍 Karachi, Pakistan</p>
-          <p>🌐 www.rabihassan.com</p>
-        </div>
-      
-        <!-- Education Section -->
-        <div class="education">
-          <h3>Education</h3>
-          <p><strong>2017 - 2021</strong></p>
-          <p>University of Karachi</p>
-          <p>Bachelor of Computer Science</p>
-          <p>GPA: 3.8 / 4.0</p>
-        </div>
-      
-        <!-- Skills Section -->
-        <div class="skills">
-          <h3>Skills</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>HTML & CSS</li>
-            <li>MongoDB</li>
-            <li>Express.js</li>
-          </ul>
-        </div>
-      
-        <!-- Languages Section -->
-        <div class="languages">
-          <h3>Languages</h3>
-          <ul>
-            <li>English (Fluent)</li>
-            <li>Urdu (Native)</li>
-            <li>Spanish (Intermediate)</li>
-          </ul>
-        </div>
-      </div>
-      <div class="main-content">
-        <!-- Profile Section -->
-        <div class="profile-section">
-          <h1>RABI HASSAN</h1>
-          <h2>FULL STACK DEVELOPER</h2>
-          <hr />
-          <h3>Profile</h3>
-          <p>
-            I am a passionate Full Stack Developer with a strong foundation in
-            building and maintaining responsive web applications from front to back.
-            With expertise in JavaScript frameworks like React.js and backend
-            technologies such as Node.js and Express, I deliver robust and scalable
-            solutions.
-          </p>
-        </div>
-      
-        <!-- Work Experience Section -->
-        <div class="work-experience">
-          <h3>Work Experience</h3>
-          <div class="job">
-            <h4>Software Engineer</h4>
-            <h5>ABC Tech Solutions | 2022 - Present</h5>
-            <ul>
-              <li>Developed and maintained scalable full-stack applications.</li>
-              <li>
-                Collaborated with cross-functional teams to design software solutions.
-              </li>
-              <li>
-                Enhanced application performance and user experience through
-                optimization.
-              </li>
-            </ul>
-          </div>
-      
-          <div class="job">
-            <h4>Web Developer Intern</h4>
-            <h5>XYZ Web Agency | 2021 - 2022</h5>
-            <ul>
-              <li>Assisted in the design and development of client websites.</li>
-              <li>Performed code reviews and fixed bugs in web applications.</li>
-              <li>Learned modern web development practices and frameworks.</li>
-            </ul>
-          </div>
-        </div>
-      
-        <!-- Reference Section -->
-        <div class="references">
-          <h3>References</h3>
-          <div class="reference">
-            <p><strong>John Doe</strong></p>
-            <p>CTO, ABC Tech Solutions</p>
-            <p>📞 +123-456-7890</p>
-            <p>📧 john.doe@abctech.com</p>
-          </div>
-          <div class="reference">
-            <p><strong>Jane Smith</strong></p>
-            <p>Team Lead, XYZ Web Agency</p>
-            <p>📞 +987-654-3210</p>
-            <p>📧 jane.smith@xyzweb.com</p>
-          </div>
-        </div>
-      </div>
-      
-      
-  </div>
-  
+  <h1>Dynamic Resume Builder</h1>
+  <form id="resume-form">
+    <!-- Contact Information -->
+    <div class="form-section">
+      <h2>Contact Information</h2>
+      <label for="profile-image">Profile Image</label>
+      <input type="file" id="profile-image" accept="image/*">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+      <label for="title">Job Title</label>
+      <input type="text" id="title" placeholder="Enter your job title" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="address">Address</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+      <label for="website">Website/LinkedIn</label>
+      <input type="url" id="website" placeholder="Enter your website or LinkedIn URL">
+    </div>
+
+    <!-- Profile Summary -->
+    <div class="form-section">
+      <h2>Profile Summary</h2>
+      <textarea id="profile" rows="4" placeholder="Write a brief profile summary"></textarea>
+    </div>
+
+    <!-- Education -->
+    <div class="form-section">
+      <h2>Education</h2>
+      <label for="institution1">Institution</label>
+      <input type="text" id="institution1" placeholder="Enter institution name">
+      <label for="year1">Year</label>
+      <input type="text" id="year1" placeholder="Year range (e.g., 2029 - 2030)">
+      <label for="degree1">Degree</label>
+      <input type="text" id="degree1" placeholder="Enter degree name">
+      <label for="gpa1">GPA</label>
+      <input type="text" id="gpa1" placeholder="Enter GPA">
+    </div>
+
+    <!-- Skills -->
+    <div class="form-section">
+      <h2>Skills</h2>
+      <textarea id="skills" rows="3" placeholder="Enter your skills separated by commas"></textarea>
+    </div>
+
+    <!-- Languages -->
+    <div class="form-section">
+      <h2>Languages</h2>
+      <textarea id="languages" rows="2" placeholder="Enter languages you know"></textarea>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="form-section">
+      <h2>Work Experience</h2>
+      <label for="company1">Company</label>
+      <input type="text" id="company1" placeholder="Enter company name">
+      <label for="role1">Role</label>
+      <input type="text" id="role1" placeholder="Enter your role">
+      <label for="yearExp1">Year</label>
+      <input type="text" id="yearExp1" placeholder="Year range (e.g., 2025 - Present)">
+      <label for="responsibilities1">Responsibilities</label>
+      <textarea id="responsibilities1" rows="3" placeholder="Enter responsibilities separated by new lines"></textarea>
+    </div>
+
+    <!-- References -->
+    <div class="form-section">
+      <h2>References</h2>
+      <label for="refName1">Reference Name</label>
+      <input type="text" id="refName1" placeholder="Enter reference name">
+      <label for="refPosition1">Position</label>
+      <input type="text" id="refPosition1" placeholder="Enter reference position">
+      <label for="refPhone1">Phone</label>
+      <input type="tel" id="refPhone1" placeholder="Enter reference phone number">
+      <label for="refEmail1">Email</label>
+      <input type="email" id="refEmail1" placeholder="Enter reference email">
+    </div>
+
+    <button type="button" onclick="generateResume()">Generate Resume</button>
+  </form>
+
+  <div id="resume-display" class="resume-container"></div>
+
+  <script src="main.js"></script>
 </body>
 </html>
